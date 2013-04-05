@@ -1,22 +1,28 @@
 {
     "name" : "webworker",
-    "version" : "0.8.2",
+    "version" : "0.9.0",
     "description" : "An implementation of the HTML5 Web Worker API",
-    "author" : "Peter Griess <pg@std.in>",
+    "author" : [
+        "Peter Griess <pg@std.in>",
+        "Thomas Bergwinkl <bergi@axolotlfarm.org>"
+    ],
     "engines" : {
-        "node" : ">=0.1.98"
+        "node" : ">=0.8.0"
     },
     "repositories" : [
         {
             "type" : "git",
-            "url" : "http://github.com/pgriess/node-webworker"
+            "url" : "https://github.com/bergos/node-webworker.git"
         }
     ],
     "licenses" : [
         {
             "type" : "BSD",
-            "url" : "http://github.com/pgriess/node-webworker/blob/master/LICENSE"
+            "url" : "https://github.com/bergos/node-webworker/blob/master/LICENSE"
         }
     ],
-    "main" : "./lib/webworker"
+    "main" : "./lib/webworker",
+    "dependencies" : {
+        "ws": ">= 0.4.25"
+    }
 }
