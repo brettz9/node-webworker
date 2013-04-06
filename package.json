@@ -23,6 +23,7 @@
     ],
     "main" : "./lib/webworker",
     "dependencies" : {
-        "ws": ">= 0.4.25"
+        "buffalo" : ">=0.1.3",
+        "ws" : ">=0.4.25"
     }
 }
