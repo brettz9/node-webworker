@@ -28,7 +28,7 @@
   "dependencies": {
     "bson": "1.0.4",
     "eyes": "0.1.8",
-    "indexeddbshim": "https://github.com/brettz9/IndexedDBShim#worker-tests",
+    "websql": "https://github.com/brettz9/node-websql#configurable",
     "ws": "1.1.1"
   }
 }
