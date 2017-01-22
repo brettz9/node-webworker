@@ -3,13 +3,12 @@
 
 var assert = require('assert');
 var path = require('path');
-var sys = require('sys');
-var Worker = require('../lib/webworker').Worker;
+var Worker = require('../lib/webworker')({relativePathType: 'file', basePath: __dirname});
 
 var receivedMsg = false;
 var receivedExit = false;
 
-var w = new Worker(path.join(__dirname, 'workers', 'simple.js'));
+var w = new Worker(path.join('workers', 'simple.js'));
 
 w.onmessage = function(e) {
     assert.ok('data' in e);

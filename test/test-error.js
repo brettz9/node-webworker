@@ -2,9 +2,9 @@
 
 var assert = require('assert');
 var path = require('path');
-var Worker = require('../lib/webworker').Worker;
+var Worker = require('../lib/webworker')({relativePathType: 'file', basePath: __dirname});
 
-var w = new Worker(path.join(__dirname, 'workers', 'error.js'));
+var w = new Worker(path.join('workers', 'error.js'));
 
 var receivedError = false;
 w.onerror = function(e) {

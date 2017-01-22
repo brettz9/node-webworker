@@ -6,6 +6,9 @@
         "Peter Griess <pg@std.in>",
         "Thomas Bergwinkl <bergi@axolotlfarm.org>"
     ],
+    "scripts": {
+        "test": "node test/test-simple && node test/test-error && node test/test-fd"
+    },
     "engines" : {
         "node" : ">=0.8.0"
     },
@@ -24,6 +27,7 @@
     "main" : "./lib/webworker",
     "dependencies" : {
         "buffalo" : ">=0.1.3",
-        "ws" : ">=0.4.25"
+        "ws" : ">=0.4.25",
+        "eyes": ">=0.1.8"
     }
 }

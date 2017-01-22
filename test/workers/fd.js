@@ -1,6 +1,5 @@
 var assert = require('assert');
 var net = require('net');
-var sys = require('sys');
 
 var s = undefined;
 

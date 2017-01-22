@@ -4,10 +4,9 @@ var assert = require('assert');
 var net = require('net');
 var netBinding = process.binding('net');
 var path = require('path');
-var sys = require('sys');
-var Worker = require('../lib/webworker').Worker;
+var Worker = require('../lib/webworker')({relativePathType: 'file', basePath: __dirname});
 
-var w = new Worker(path.join(__dirname, 'workers', 'fd.js'));
+var w = new Worker(path.join('workers', 'fd.js'));
 
 var fds = netBinding.pipe();
 
