@@ -1,33 +1,34 @@
 {
-    "name" : "webworker",
-    "version" : "0.9.0",
-    "description" : "An implementation of the HTML5 Web Worker API",
-    "author" : [
-        "Peter Griess <pg@std.in>",
-        "Thomas Bergwinkl <bergi@axolotlfarm.org>"
-    ],
-    "scripts": {
-        "test": "node test/test-simple && node test/test-error && node test/test-fd"
-    },
-    "engines" : {
-        "node" : ">=0.8.0"
-    },
-    "repositories" : [
-        {
-            "type" : "git",
-            "url" : "https://github.com/bergos/node-webworker.git"
-        }
-    ],
-    "licenses" : [
-        {
-            "type" : "BSD",
-            "url" : "https://github.com/bergos/node-webworker/blob/master/LICENSE"
-        }
-    ],
-    "main" : "./lib/webworker",
-    "dependencies" : {
-        "bson" : "1.0.4",
-        "ws" : "1.1.1",
-        "eyes": "0.1.8"
+  "name": "webworker",
+  "version": "0.9.0",
+  "description": "An implementation of the HTML5 Web Worker API",
+  "author": [
+    "Peter Griess <pg@std.in>",
+    "Thomas Bergwinkl <bergi@axolotlfarm.org>"
+  ],
+  "scripts": {
+    "test": "node test/test-simple && node test/test-error && node test/test-fd"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/brettz9/node-webworker.git"
     }
+  ],
+  "licenses": [
+    {
+      "type": "BSD",
+      "url": "https://github.com/brettz9/node-webworker/blob/master/LICENSE"
+    }
+  ],
+  "main": "./lib/webworker",
+  "dependencies": {
+    "bson": "1.0.4",
+    "eyes": "0.1.8",
+    "indexeddbshim": "https://github.com/brettz9/IndexedDBShim#worker-tests",
+    "ws": "1.1.1"
+  }
 }
