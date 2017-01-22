@@ -9,13 +9,13 @@ See the design document
 
 #### Master source
 
-    var sys = require('sys');
+    var util = require('util');
     var Worker = require('webworker').Worker;
     
     var w = new Worker('foo.js');
     
     w.onmessage = function(e) {
-        sys.debug('Received mesage: ' + sys.inspect(e));
+        util.debug('Received mesage: ' + util.inspect(e));
         w.terminate();
     };
     
@@ -28,7 +28,7 @@ See the design document
     };
     
     onclose = function() {
-        sys.debug('Worker shuttting down.');
+        util.debug('Worker shuttting down.');
     };
 
 ### API
